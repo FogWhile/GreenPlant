@@ -58,6 +58,7 @@ Page({
 
   },
   storageOne:function(){
+    wx.removeStorage('gp')
     var gp = {
       name:'多肉',
       tem:'15-28',
@@ -67,12 +68,14 @@ Page({
       src:'../../images/001.png',
       song:'《Replay》《Flower Dance》《千与千寻》'
     }
-    wx.setStorageSync('gp', gp);
+    wx.setStorageSync('gp', gp),
+    console.log(gp),
     wx.reLaunch({
       url: '../mine/mine',
     })
   },
     storageTwo: function () {
+      wx.removeStorage('gp')
     var gp = {
       name: '芦荟',
       tem: '20-30',
@@ -82,12 +85,14 @@ Page({
       src: '../../images/002.png',
       song: '《Replay》《Flower Dance》《千与千寻》'
     }
-    wx.setStorageSync('gp', gp);
-    wx.reLaunch({
-      url: '../mine/mine',
-    })
+    wx.setStorageSync('gp', gp),
+      console.log(gp),
+      wx.reLaunch({
+        url: '../mine/mine',
+      })
   },
   storageThr: function () {
+    wx.removeStorage('gp')
     var gp = {
       name: '仙人掌',
       tem: '20-30',
@@ -98,6 +103,7 @@ Page({
       song: '《Replay》《Flower Dance》《千与千寻》'
     }
     wx.setStorageSync('gp', gp);
+    console.log(gp),
     wx.reLaunch({
       url: '../mine/mine',
     })

@@ -74,7 +74,6 @@ Page({
 
   },
   bindtap: function () {
-    wx.clearStorageSync('gp')
     wx.reLaunch({
       url: '../choose/choose',
     })
