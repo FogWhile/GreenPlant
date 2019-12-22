@@ -1,13 +1,14 @@
 <!--pages/index/index.wxml-->
 <view class='page'>
+<image class='background' src="../../images/back01.png" mode="aspectFill"></image>
   <!-- 每一条文字 -->
   <scroll-view scroll-y='true' class='lists'>
     <block wx:for="{{lists}}" wx:key="*this.id">
       <view class="list-i" data-id="{{item.id}}">
-        <image src="{{item.tempFilePaths}}" mode="aspectFit"></image>
+        <image class="cover" src="{{item.tempFilePaths}}" mode="aspectFit"></image>
         <view class="content">{{item.content}}</view>
-        <view class="time"  hover-class='hover'>
-          <image class="del" data-index='{{index}}' src='../../images/del.png' bindtap="del"></image>
+        <view class="right"  hover-class='hover'>
+          <image data-index='{{index}}' src='../../images/del.png' bindtap="del"></image>
         </view>
       </view>
     </block>

@@ -1,4 +1,5 @@
 <!--pages/mine/mine.wxml-->
+<image class='background' src="../../images/back03.png" mode="aspectFill"></image>
 <mp-cells ext-class="my-cells">
     <mp-cell link url="../choose/choose" link hover value="更改绿植种类" footer="→">
     </mp-cell>
@@ -18,4 +19,6 @@
 </view>
 <view class="page_T">
  <text>小提示:{{tips}}</text>
+</view><view class="page_T">
+ <text>推荐歌曲:{{song}}</text>
 </view>

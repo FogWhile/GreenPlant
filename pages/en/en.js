@@ -1,7 +1,7 @@
 var myCharts = require("../../utils/wxcharts.js")//引入一个绘图的插件
 
-const devicesId = "替换为你的设备ID" // 填写在OneNet上获得的devicesId 形式就是一串数字 例子:9939133
-const api_key = "replace with your api-key" // 填写在OneNet上的 api-key 例子: VeFI0HZ44Qn5dZO14AuLbWSlSlI=
+const devicesId = "562145216" // 填写在OneNet上获得的devicesId 形式就是一串数字 例子:9939133
+const api_key = "Jra62xGi7kd=l=mSra9rl30mB34=" // 填写在OneNet上的 api-key 例子: VeFI0HZ44Qn5dZO14AuLbWSlSlI=
 
 Page({
   data: {},

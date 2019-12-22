@@ -7,6 +7,7 @@ Page({
     light:'',
     tips:'',
     src:'',
+    song:'',
   },
 
   /**
@@ -20,7 +21,8 @@ Page({
       water: gp.water,
       light: gp.light,
       tips: gp.tips,
-      src:gp.src
+      src:gp.src,
+      song:gp.song,
     })
   },
   /**

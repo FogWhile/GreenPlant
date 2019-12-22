@@ -10,3 +10,8 @@
     opacity: 0.9;
     background:rgb(160, 160, 160);
 }
+.cover {
+  width: 100%;
+  height: 400rpx;
+  display: block;
+}
