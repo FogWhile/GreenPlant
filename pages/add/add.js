@@ -33,7 +33,7 @@ Page({
     setValue(this);
     wx.navigateBack();
   },
-  chooseimage: function () {
+  chooseimage: function () {//选择添加图片
     var _this = this;
     wx.chooseImage({
       count: 1, // 默认9

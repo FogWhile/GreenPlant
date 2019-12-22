@@ -64,17 +64,17 @@ Page({
       url: '../add/add'
     })
   },
-  del: function (e) {
+  del: function (e) {//删除数据列表中的一条
     var current = e.currentTarget.dataset.index;
     var list = this.data.lists;
     list.splice(current, 1)
     this.setData({
       lists: list
     })
-    wx.setStorageSync("txt", this.data.lists)
+    wx.setStorageSync("txt", this.data.lists)//删除完后储存到本地数据完成本地数据的更新
   }
 })
-function initData(page) {
+function initData(page) {//加载页面时从本地储存获取txt数据列表
   var arr = wx.getStorageSync('txt');
   page.setData({
     lists: arr

@@ -72,10 +72,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  bindtap: function () {
-    wx.reLaunch({
-      url: '../choose/choose',
-    })
-  },
+  }
 })

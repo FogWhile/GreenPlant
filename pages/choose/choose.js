@@ -57,8 +57,9 @@ Page({
   onShareAppMessage: function () {
 
   },
+  //点击图片时调用的函数
   storageOne:function(){
-    wx.removeStorage('gp')
+    wx.removeStorage('gp')//清除本地缓存中的gp
     var gp = {
       name:'多肉',
       tem:'15-28',
@@ -68,9 +69,9 @@ Page({
       src:'../../images/001.png',
       song:'《Replay》《Flower Dance》《千与千寻》'
     }
-    wx.setStorageSync('gp', gp),
+    wx.setStorageSync('gp', gp),//将数据组gp储存到本地
     console.log(gp),
-    wx.reLaunch({
+    wx.reLaunch({//重新加载mine页面
       url: '../mine/mine',
     })
   },
